@@ -185,7 +185,7 @@ main{
     width: 100%;
     overflow-y: scroll;
     padding-top: 110px;
-    margin: 0 0 90px 230px;
+    margin: 0 0 89px 230px;
     background-color: #141922;
 }
 
@@ -258,6 +258,8 @@ section{
     border-radius: 50%;
 }
 
+
+/* Footer Rules */
 footer{
     position: fixed;
     bottom: 0px;
@@ -265,19 +267,59 @@ footer{
     left: 0px;
     z-index: 501;
     height: 90px;
-    width: 100%;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
-    /* DEBUG */
-    background-color: gray;
+    align-items: center;
+    background-color: #282828;
 }
 
-footer > *{
-    /* DEBUG */
-    background-color: chocolate;
-    height: 100%;
+.foot.left img{
+    height: 50%;
+    margin-right: 10px;
+}
+
+.foot.left .icon{
+    color: gray;
+    margin-left: 40px;
+}
+
+.foot.left .icon i{
+    margin-left: 10px;
+}
+
+.foot{
+    display: flex;
+    align-items: center;
+}
+
+.music{
+    color:white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.artist{
+    color: gray;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.foot.left{
     width: 100%;
+    height: 100%;
+}
+
+.foot.center{
+    width: 100%;
+    height: 100%;
+    /* DEBUG */
     border: 1px solid black;
+}
+
+.foot.right{
+    width: 100%;
+    height: 100%;
 }
 
 
