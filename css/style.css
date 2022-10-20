@@ -156,8 +156,12 @@ header{
     padding-right: 2px;
 }
 
+.bottom{
+    margin-bottom: 10px;
+}
+
 .bottom hr{
-    margin: 5px 0;
+    margin: 8px 0;
 }
 
 .profile{
@@ -216,17 +220,17 @@ main h3{
     color: white;
     font-weight: bold;
     font-size: 25px;
-    margin-bottom: 5px;
 }
 
 .sub-title{
     color: gray;
     font-weight: bold;
     font-size: 12px;
+    margin-top: 5px;
 }
 
 section{
-    margin: 30px 0 80px;
+    margin: 30px 0 50px;
     display: flex;
     justify-content: flex-start;
     gap: 10px;
@@ -234,10 +238,24 @@ section{
 }
 
 .card{
-    /* DEBUG */
-    background-color: brown;
     width: 180px;
     min-height: 280px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h6{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.circle.card img{
+    border-radius: 50%;
 }
 
 footer{
@@ -288,6 +306,7 @@ footer > *{
     .playlist, .create, .pages span, .bottom span, hr{
         display: none;
     }
+    
     
     .bottom img{
         display: block;
