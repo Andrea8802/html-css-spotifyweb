@@ -69,7 +69,7 @@ header{
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .left-menu img{
@@ -129,6 +129,7 @@ header{
 
 .middle{
     overflow-y: scroll;
+    height: 100%;
 }
 
 .playlist{
@@ -158,7 +159,8 @@ header{
 }
 
 .bottom{
-    margin-bottom: 10px;
+   max-height: 100%;
+    margin: 10px 0;
 }
 
 .bottom hr{
@@ -314,8 +316,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     gap: 5px;
-    /* DEBUG */
-    border: 1px solid black;
 }
 
 .foot.center .icon{
