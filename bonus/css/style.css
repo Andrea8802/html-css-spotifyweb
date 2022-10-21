@@ -112,6 +112,10 @@ header > .logo-s{
 
 }
 
+.left-menu .logo-s{
+    filter: invert(0);
+}
+
 .pages > li:hover  img{
     filter: invert(0);
 }
@@ -250,6 +254,10 @@ main{
     padding-bottom: 3px;
 }
 
+.top-menu li:first-child a{
+    color: white;
+}
+
 .top-menu li a:hover{
     color: white;
 }
@@ -273,12 +281,12 @@ main h3{
     margin-top: 5px;
 }
 
-section{
+main section{
     margin: 30px 0 50px;
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .card{
@@ -286,6 +294,8 @@ section{
     min-height: 280px;
     text-align: center;
     position: relative;
+    cursor: pointer;
+
 }
 
 .play-hover{
@@ -548,7 +558,7 @@ footer{
     
     .left-menu{
         width: 60px;
-        padding: 0px;
+        padding: 10px 0 0;
         align-items: center;
     }
     
@@ -562,7 +572,7 @@ footer{
         margin: 0 0 90px 60px;
     }
 
-    .playlist, .create, .pages span, .bottom span, hr{
+    .playlist, .create, .pages span, .bottom span, .left-menu hr{
         display: none;
     }
 
@@ -592,7 +602,7 @@ footer{
 
 /* XS Version */
 @media  screen and (max-width: 440px) {
-    
+
     .foot.right .icon{
         flex-direction: column;
     }
@@ -600,5 +610,101 @@ footer{
     .foot.left .icon i{
         display: block;
         margin: 5px 0;
+    }
+    
+    header{
+        display: none;
+    }
+    main{
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .foot.left, .foot.right{
+        display: none;
+    }
+
+    footer{
+        justify-content: center;
+    }
+    
+}
+
+/* Bonus Version */
+@media screen and (max-height: 550px){
+    .left-menu{
+        display: none;
+    }
+
+    #logo-l{
+        display: none;
+    }
+    main{
+        margin-left: 0px;
+    }
+
+    header{
+        margin-left: 0px;
+        justify-content: space-between;
+    }
+
+    header > .logo-s{
+        display: inline-block;
+    }
+
+    .upgrade{
+        font-size: 11px;
+        padding: 15px 30px;
+    }
+
+    .upgrade:hover{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-height: 550px) and (min-width: 400px){
+    header > .logo-s{
+        display: none;
+    }
+
+    #logo-l{
+        display: inline-block;
+    }
+} 
+
+@media screen and (max-width: 1485px){
+    main section{
+        flex-wrap: nowrap;
+    }
+    .card:nth-child(6){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1270px){
+    .card:nth-child(5){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .card:nth-child(4){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .card:nth-child(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 470px){
+    main section{
+        justify-content: center;
+    }
+    .card:nth-child(2){
+        display: none;
     }
 }
